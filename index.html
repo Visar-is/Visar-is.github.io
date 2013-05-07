@@ -4,39 +4,85 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Vísar - bjóðum upp á ýmiskonar kannanir fyrir fyrirtæki og stofnanir á Íslandi</title>
+	<title>Vísar - við mælum með þér</title>
 
 	<!-- OpenGraph (Facebook) http://ogp.me -->
-	<meta property="og:title" content="Vísar - bjóðum upp á ýmiskonar kannanir fyrir fyrirtæki og stofnanir á Íslandi"/>
+	<meta property="og:title" content="Vísar - við mælum með þér"/>
 	<meta property="og:type" content="business" />
-	<meta property="og:image" content="/logo_mountain_512.png"/>
+	<meta property="og:image" content="/images/logo_512.png"/>
 	<meta property="og:url" content="http://visar.is"/>
-	<meta property="og:site_name" content="Vísar - bjóðum upp á ýmiskonar kannanir fyrir fyrirtæki og stofnanir á Íslandi"/>
-	<meta property="og:description" content="bjóðum upp á ýmiskonar kannanir fyrir fyrirtæki og stofnanir á Íslandi">
+	<meta property="og:site_name" content="Vísar - við mælum með þér"/>
+	<meta property="og:description" content="Vísar bjóða upp á sérsniðnar kannanir fyrir fyrirtæki og stofnanir á Íslandi">
 	
 	<style type="text/css">
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 	fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; }
 	ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
 
+	/* WebFonts */  
+	@font-face {font-family: 'AvenirNextLTPro-Bold';src: url('webfonts/26E8D5_0_0.eot');src: url('webfonts/26E8D5_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E8D5_0_0.woff') format('woff'),url('webfonts/26E8D5_0_0.ttf') format('truetype');}
+	@font-face {font-family: 'AvenirNextLTPro-BoldIt';src: url('webfonts/26E8D5_1_0.eot');src: url('webfonts/26E8D5_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E8D5_1_0.woff') format('woff'),url('webfonts/26E8D5_1_0.ttf') format('truetype');}
+	@font-face {font-family: 'AvenirNextLTPro-It';src: url('webfonts/26E8D5_2_0.eot');src: url('webfonts/26E8D5_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E8D5_2_0.woff') format('woff'),url('webfonts/26E8D5_2_0.ttf') format('truetype');}
+	@font-face {font-family: 'AvenirNextLTPro-Demi';src: url('webfonts/26E8D5_3_0.eot');src: url('webfonts/26E8D5_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E8D5_3_0.woff') format('woff'),url('webfonts/26E8D5_3_0.ttf') format('truetype');}  
+	@font-face {font-family: 'AvenirNextLTPro-Regular';src: url('webfonts/26E8D5_4_0.eot');src: url('webfonts/26E8D5_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/26E8D5_4_0.woff') format('woff'),url('webfonts/26E8D5_4_0.ttf') format('truetype');}
+
 	/* Start App CSS */
-	#container { background: url('graph_background.png') 0 0 repeat; }
+	body { background: url('/images/graph_background.png') 0 0 repeat; font-family: AvenirNextLTPro-Regular; font-size: 18px; color: #404041; }
+
+	h1 { font-family: AvenirNextLTPro-Bold; font-size: 130px; line-height: 85px; letter-spacing: -5px; }
+	h2 { font-family: AvenirNextLTPro-Regular; font-size: 30px; line-height: 30px; letter-spacing: -1px; }
+	h4 { font-family: AvenirNextLTPro-Demi; }
+	
+	a 				{ font-family: AvenirNextLTPro-Demi; color: #41c2ff; text-decoration: none; }
+	a:visited		{ color: #006daf; text-decoration: none; }
+	a:hover			{ color: #006daf; text-decoration: underline; }
+	
+	.clear			{ clear: both; }
+	.container		{ width: 1000px; margin: 30px auto; }
+	
+	.header			{ height: 136px; }
+	.header .logo 	{ float: left; position: relative; top: 0px; left: 25px; }
+	.header .title	{ float: left; position: relative; top: 18px; left: 35px; }
+	.header  h2		{ position: relative; top: 0px; left: 25px; }
+	.graph 			{ float: right; position: relative; top: 15px; right: 60px; }
+	
+	.placeholder	{ width: 675px; margin: 100px 0 100px 100px; font-family: AvenirNextLTPro-Regular; font-size: 36px; line-height: 44px; }
+
+	.mountains		{ display: block;  }
+
+	.footer			{ line-height: 24px; }
+	.footer-left	{ float: left; margin-left: 30px; }
+	.footer-right	{ float: right; text-align: right; margin-right: 30px; }
+	
 	</style>
 
 </head>
 <body id="visar-is">
-	<img src="title.svg" border="0">
-    <h1>Vísar</h1>
-
-	<div id="container">
-		<img src="mountains.svg" border="0">
+	<div class="container">
+		<div class="header">
+			<img class="logo" src="/images/logo.png" border="0">
+			<div class="title">
+				<h1>vísar</h1>
+				<h2>við mælum með þér</h2>
+			</div>
+			<img class="graph" src="/images/graph.png" border="0">
+			<div class="clear"></div>
+	    </div>
+	    <div class="placeholder">
+	    	<p>Vísar bjóða upp á sérsniðnar kannanir fyrir fyrirtæki og stofnanir á Íslandi</p>
+	    </div>
 	</div>
-
-	<h4>Vísar - rannsóknir ehf.</h4>
-	<p>Austurstrœti 17<br>101 Reykjavík<br>Ísland</p>
-
-	<p>+354 583 0700<br><a href="mailto:visar@visar.is">visar@visar.is</a></p>
-
-
+	<div class="container">
+		<img class="mountains" src="/images/mountains.png" border="0">
+	</div>
+	<div class="container footer">
+		<div class="footer-left">
+			<h4>Vísar - rannsóknir ehf.</h4>
+			<p>Austurstrœti 17<br>101 Reykjavík<br>Ísland</p>
+		</div>
+		<div class="footer-right">
+			<p>&nbsp;<br>+354 583 0700<br><a href="mailto:visar@visar.is">visar@visar.is</a></p>
+		</div>
+	</div>
 </body>
 </html>
