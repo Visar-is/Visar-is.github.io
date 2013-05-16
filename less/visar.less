@@ -1,0 +1,93 @@
+/* Header */
+
+	header { 
+		height: 145px;
+	}
+
+	header object, header img {
+		float: left;
+		position: relative;
+		top: 22px;
+		left: 0px;
+	}
+
+	header h1, header h2 {
+		display: none;		
+	}
+
+	header nav {
+		float: right;
+		position: relative;
+		top: 50px;
+		left: 0px;
+	}
+	
+	header nav a {
+		margin-left: 15px;
+	}
+
+/* Hero */
+
+
+
+
+/* Elements */
+
+	@dark-blue-stripe: #005283;
+
+	hr.divider-dark-blue-stripe {
+		height: 12px;
+		background: @dark-blue-stripe;
+		margin: 0px;		
+	}
+
+	hr.divider-dark-blue-stripe-medium {
+		height: 18px;
+		background: @dark-blue-stripe;
+		margin: 0px;
+	}
+
+	hr.divider-dark-blue-stripe-large {
+		height: 25px;
+		background: @dark-blue-stripe;
+		margin: 0px;
+	}
+	
+	
+/* Repsonsive Stuff */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
+	    header nav { display: none; }
+
+	}
+
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
+	    header nav { display: none; }
+
+	}
+
+    @media only screen and (max-width: 480px) {
+
+	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
+	    header nav { display: none; }
+
+	}
+
+	
+/* Misc */
+	
+	.services-plus {
+		position: relative;
+		top: 75px;
+		left: 0px;
+	}
+	
+	
+
+	
+	

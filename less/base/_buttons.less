@@ -1,0 +1,153 @@
+/* #Buttons
+================================================== */
+	
+	/* Global - for all buttons */
+	.button-globals(@color: #eeeeee, @shadow: #333333, @border: #999999) {
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		display: inline-block;
+		cursor: pointer;
+
+		margin-bottom: 20px;
+		padding: 10px 12px;
+
+		color: @color !important;
+		font-family: @base-text-font-family-bold;	
+		font-size: 16px;
+		font-weight: bold;
+		line-height: normal;
+		text-shadow: 1px 1px 1px @shadow; 		
+		text-decoration: none;
+
+		border: 1px solid @border;
+		border-top: 1px solid (@border + #222222);
+		border-left: 1px solid (@border + #222222);
+	}
+
+
+	/* Primary */
+	.button,
+	.button-primary,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		.gradient(@button-primary-top, @button-primary-bottom, @button-primary-top);
+		.button-globals(@button-primary-color, @button-primary-shadow, @button-primary-border);
+		text-decoration: none;
+	}
+	.button:hover,
+	.button-primary:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		.gradient(@button-primary-top-hover, @button-primary-bottom-hover, @button-primary-top-hover);
+		border: 1px solid @button-primary-bottom-hover;
+		text-decoration: none;
+	}
+	.button:active,
+	.button-primary:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {	
+		.gradient(@button-primary-top-hover, @button-primary-top-hover, @button-primary-bottom-hover);
+		border: 1px solid #444;
+		text-decoration: none;		
+	}
+
+
+	/* Secondary */
+	.button-secondary {
+		.gradient(@button-secondary-top, @button-secondary-bottom, @button-secondary-top);
+		.button-globals(@button-primary-color, @button-primary-shadow, @button-primary-border);
+	}
+	.button-secondary:hover {
+		.gradient(@button-secondary-top-hover, @button-secondary-bottom-hover, @button-secondary-top-hover);
+		border: 1px solid #666;
+		border-top: 1px solid #999;
+		border-left: 1px solid #999;
+	}
+	.button-secondary:active {	
+		.gradient(@button-secondary-top-hover, @button-secondary-top-hover, @button-secondary-bottom-hover);
+		border-top: 1px solid #666;
+		border-left: 1px solid #666;
+	}
+
+
+
+	/* Alert */
+	.button-alert {
+		.gradient(@button-alert-top, @button-alert-bottom, @button-alert-top);
+		.button-globals(@button-alert-color, @button-alert-shadow, @button-alert-border);
+	}
+
+	.button-alert:hover {
+		.gradient(@button-alert-top-hover, @button-alert-bottom-hover, @button-alert-top-hover);
+		border: 1px solid #666;
+		border-top: 1px solid #999;
+		border-left: 1px solid #999;
+	}
+	.button-alert:active {
+		.gradient(@button-alert-top-hover, @button-alert-top-hover, @button-alert-bottom-hover);
+		border: 1px solid #333;
+		border-top: 1px solid #555;
+		border-left: 1px solid #555;	
+	}
+
+
+	/* Warning */
+	.button-warning {
+		.gradient(@button-warning-top, @button-warning-bottom, @button-warning-top);
+		.button-globals(@button-warning-color, @button-warning-shadow, @button-warning-border);
+	}
+	.button-warning:hover {
+		.gradient(@button-warning-top-hover, @button-warning-bottom-hover, @button-warning-top-hover);
+		border: 1px solid #666;
+		border-top: 1px solid #999;
+		border-left: 1px solid #999;
+	}
+	.button-warning:active {
+		.gradient(@button-warning-top-hover, @button-warning-top-hover, @button-warning-bottom-hover);
+		border: 1px solid #333;
+		border-top: 1px solid #555;
+		border-left: 1px solid #555;
+	}
+
+
+	/* Icons */
+	.button span,
+	.button-secondary span,
+	.button-alert span,
+	.button-warning span, {
+		margin-right: 5px;
+	}
+
+
+	/* Full Width */
+	.button.full-width,
+	.button-primary.full-width,
+	.button-secondary.full-width,
+	.button-alert.full-width,
+	.button-warning.full-width,
+	.button-big-primary.full-width,
+	.button-big-secondary.full-width,
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width {
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center;
+	}
+
+
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+    	border: 0;
+    	padding: 0;
+	}
