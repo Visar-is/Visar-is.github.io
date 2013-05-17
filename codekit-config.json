@@ -15,6 +15,19 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/less\/brian-layout.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/brian-layout.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/brian-layout.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/ico\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -25,19 +38,6 @@
       "outputAbbreviatedPath" : "\/ico\/favicon.png",
       "initialSize" : 2711,
       "fileType" : 8192
-    },
-    "\/less\/visar.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/visar.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/visar.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
     },
     "\/less\/mixins\/animate.less" : {
       "ignoreWasSetByUser" : 0,
@@ -52,15 +52,28 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/less\/brian-layout.less" : {
+    "\/less\/visar.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/brian-layout.less",
+      "inputAbbreviatedPath" : "\/less\/visar.less",
       "outputStyle" : 0,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/brian-layout.css",
+      "outputAbbreviatedPath" : "\/css\/visar.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/less\/base\/_config.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/base\/_config.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/less\/css\/_config.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -78,29 +91,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/divider-mountain-3.png" : {
+    "\/img\/mountains-5.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/divider-mountain-3.png",
+      "inputAbbreviatedPath" : "\/img\/mountains-5.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/divider-mountain-3.png",
-      "initialSize" : 32811,
+      "outputAbbreviatedPath" : "\/img\/mountains-5.png",
+      "initialSize" : 3526,
       "fileType" : 8192
-    },
-    "\/less\/base\/_config.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/base\/_config.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/less\/css\/_config.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
     },
     "\/less\/base\/_base.less" : {
       "ignoreWasSetByUser" : 0,
@@ -115,17 +115,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/slide-02.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/slide-02.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/slide-02.jpg",
-      "initialSize" : 137070,
-      "fileType" : 4096
-    },
     "\/less\/base\/_buttons.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -139,15 +128,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/background-stone.png" : {
+    "\/img\/mountains.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/background-stone.png",
+      "inputAbbreviatedPath" : "\/img\/mountains.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/background-stone.png",
-      "initialSize" : 11266,
+      "outputAbbreviatedPath" : "\/img\/mountains.png",
+      "initialSize" : 21701,
       "fileType" : 8192
     },
     "\/img\/mountains-4.png" : {
@@ -172,15 +161,15 @@
       "initialSize" : 4026,
       "fileType" : 8192
     },
-    "\/less\/base\/_links.less" : {
+    "\/less\/base\/_navigation.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/base\/_links.less",
+      "inputAbbreviatedPath" : "\/less\/base\/_navigation.less",
       "outputStyle" : 0,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/less\/css\/_links.css",
+      "outputAbbreviatedPath" : "\/less\/css\/_navigation.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -207,6 +196,17 @@
       "initialSize" : 22214,
       "fileType" : 8192
     },
+    "\/img\/plus.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/plus.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/plus.png",
+      "initialSize" : 500,
+      "fileType" : 8192
+    },
     "\/img\/mountains-3.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -216,17 +216,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/mountains-3.png",
       "initialSize" : 3759,
-      "fileType" : 8192
-    },
-    "\/img\/background-blue-stripe.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/background-blue-stripe.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/background-blue-stripe.png",
-      "initialSize" : 191,
       "fileType" : 8192
     },
     "\/less\/base\/_shapes.less" : {
@@ -255,28 +244,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/mountains-5.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/mountains-5.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/mountains-5.png",
-      "initialSize" : 3526,
-      "fileType" : 8192
-    },
-    "\/img\/mountains-2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/mountains-2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/mountains-2.png",
-      "initialSize" : 4704,
-      "fileType" : 8192
-    },
     "\/img\/background-stone.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -301,6 +268,28 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/img\/divider-mountains.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/divider-mountains.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/divider-mountains.png",
+      "initialSize" : 72785,
+      "fileType" : 8192
+    },
+    "\/img\/mountains-2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/mountains-2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/mountains-2.png",
+      "initialSize" : 4704,
+      "fileType" : 8192
+    },
     "\/less\/base\/_skeleton.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -314,18 +303,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/less\/base\/_navigation.less" : {
+    "\/ico\/apple-touch-icon-512-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/base\/_navigation.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/less\/css\/_navigation.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/ico\/apple-touch-icon-512-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/ico\/apple-touch-icon-512-precomposed.png",
+      "initialSize" : 13369,
+      "fileType" : 8192
     },
     "\/img\/mountains-1.png" : {
       "ignoreWasSetByUser" : 0,
@@ -351,16 +338,40 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/plus.png" : {
+    "\/img\/background-blue-dark-stripe.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/plus.png",
+      "inputAbbreviatedPath" : "\/img\/background-blue-dark-stripe.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/plus.png",
-      "initialSize" : 500,
+      "outputAbbreviatedPath" : "\/img\/background-blue-dark-stripe.png",
+      "initialSize" : 2966,
       "fileType" : 8192
+    },
+    "\/img\/background-blue-light-stripe.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/background-blue-light-stripe.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/background-blue-light-stripe.png",
+      "initialSize" : 1010,
+      "fileType" : 8192
+    },
+    "\/less\/base\/_links.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/base\/_links.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/less\/css\/_links.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/img\/background-rocks.png" : {
       "ignoreWasSetByUser" : 0,
@@ -384,17 +395,6 @@
       "initialSize" : 16780,
       "fileType" : 8192
     },
-    "\/img\/slide-01.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/slide-01.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/slide-01.jpg",
-      "initialSize" : 83303,
-      "fileType" : 4096
-    },
     "\/img\/artwork-devices.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -404,17 +404,6 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/img\/artwork-devices.png",
       "initialSize" : 11661,
-      "fileType" : 8192
-    },
-    "\/img\/divider-mountain-1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/divider-mountain-1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/divider-mountain-1.png",
-      "initialSize" : 37788,
       "fileType" : 8192
     },
     "\/less\/base\/_images.less" : {
@@ -480,23 +469,12 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/img\/slide-03.jpg" : {
+    "\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/slide-03.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/slide-03.jpg",
-      "initialSize" : 137378,
-      "fileType" : 4096
-    },
-    "\/guide.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/guide.html",
+      "inputAbbreviatedPath" : "\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -511,12 +489,21 @@
       "initialSize" : 3486,
       "fileType" : 8192
     },
-    "\/index.html" : {
+    "\/css\/web.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/web.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
+    "\/guide.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
+      "inputAbbreviatedPath" : "\/guide.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -542,37 +529,6 @@
       "initialSize" : 172,
       "fileType" : 8192
     },
-    "\/css\/web.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/web.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/ico\/apple-touch-icon-114-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/ico\/apple-touch-icon-114-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/ico\/apple-touch-icon-114-precomposed.png",
-      "initialSize" : 11392,
-      "fileType" : 8192
-    },
-    "\/img\/divider-mountain-2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/divider-mountain-2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/divider-mountain-2.png",
-      "initialSize" : 35212,
-      "fileType" : 8192
-    },
     "\/less\/web.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -586,6 +542,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/ico\/apple-touch-icon-114-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/ico\/apple-touch-icon-114-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/ico\/apple-touch-icon-114-precomposed.png",
+      "initialSize" : 11392,
+      "fileType" : 8192
+    },
     "\/css\/guide.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -594,6 +561,17 @@
       "inputAbbreviatedPath" : "\/css\/guide.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/js\/html5shiv.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/html5shiv.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/html5shiv-min.js",
+      "fileType" : 64
     },
     "\/img\/artwork-skolapulsinn-photo.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -788,7 +766,7 @@
   },
   "projectAttributes" : {
     "bourbonEnabled" : 0,
-    "displayValue" : "Visar-is.proper",
+    "displayValue" : "Visar-is.github.io",
     "displayValueWasSetByUser" : 0,
     "compassEnabled" : 0
   }

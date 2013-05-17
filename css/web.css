@@ -3454,8 +3454,10 @@ body {
   background-position: 0 0;
   background-repeat: repeat;
 }
-.background-blue-stripe {
-  background-image: url('/img/background-blue-stripe.png');
+.background-light-blue-stripe {
+  border-top: 12px solid #3d6088;
+  border-bottom: 12px solid #3d6088;
+  background-image: url('/img/background-blue-light-stripe.png');
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -3467,6 +3469,53 @@ body {
 .background-white-box {
   background: #FFF;
   border: 1px solid #b0b1b2;
+}
+/* Mountains */
+.divider-mountain-one {
+  height: 84px;
+  background-image: url('/img/divider-mountains.png');
+  background-position-x: center;
+  background-position-y: 0px;
+  background-repeat: repeat;
+}
+.divider-mountain-two {
+  height: 53px;
+  background-image: url('/img/divider-mountains.png');
+  background-position-x: center;
+  background-position-y: -85px;
+  background-repeat: repeat;
+}
+.divider-mountain-three {
+  height: 51px;
+  background-image: url('/img/divider-mountains.png');
+  background-position-x: center;
+  background-position-y: -138px;
+  background-repeat: repeat;
+}
+/* Blue Stripes */
+hr.divider-dark-blue-stripe {
+  height: 12px;
+  background: #005283;
+  background-image: url('/img/background-blue-dark-stripe.png');
+  background-position: 0 0;
+  background-repeat: repeat;
+  margin: 0px;
+}
+hr.divider-dark-blue-stripe-medium {
+  height: 18px;
+  background: #005283;
+  background-image: url('/img/background-blue-dark-stripe.png');
+  background-position: 0 0;
+  background-repeat: repeat;
+  margin: 0px;
+}
+hr.divider-dark-blue-stripe-large {
+  height: 25px;
+  background: #005283;
+  background-image: url('/img/background-blue-dark-stripe.png');
+  background-position: 0 0;
+  background-repeat: repeat;
+  margin: 0px;
 }
 /* #Fonts
 ================================================== */
@@ -4746,21 +4795,8 @@ header nav a {
   margin-left: 15px;
 }
 /* Hero */
-/* Elements */
-hr.divider-dark-blue-stripe {
-  height: 12px;
-  background: #005283;
-  margin: 0px;
-}
-hr.divider-dark-blue-stripe-medium {
-  height: 18px;
-  background: #005283;
-  margin: 0px;
-}
-hr.divider-dark-blue-stripe-large {
-  height: 25px;
-  background: #005283;
-  margin: 0px;
+#hero h2 {
+  font-family: AvenirNextLTPro-Regular, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* Repsonsive Stuff */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
