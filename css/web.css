@@ -3892,7 +3892,7 @@ input[type="button"] {
   color: #ffffff !important;
   font-family: AvenirNextLTPro-Demi, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: normal;
   text-shadow: 1px 1px 1px #444444;
   border: 1px solid #005283;
@@ -3948,7 +3948,7 @@ input[type="button"]:active {
   color: #ffffff !important;
   font-family: AvenirNextLTPro-Demi, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: normal;
   text-shadow: 1px 1px 1px #444444;
   text-decoration: none;
@@ -3995,7 +3995,7 @@ input[type="button"]:active {
   color: #ffffff !important;
   font-family: AvenirNextLTPro-Demi, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: normal;
   text-shadow: 1px 1px 1px #444444;
   text-decoration: none;
@@ -4043,7 +4043,7 @@ input[type="button"]:active {
   color: #ffffff !important;
   font-family: AvenirNextLTPro-Demi, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: normal;
   text-shadow: 1px 1px 1px #444444;
   text-decoration: none;
@@ -4730,6 +4730,7 @@ label span.form_error {
 .row,
 .clearfix {
   zoom: 1;
+  clear: both;
 }
 /* You can also use a <br class="clear" /> to clear columns */
 .clear {
@@ -4778,6 +4779,35 @@ label span.form_error {
   display: none;
 }
 /* Global Repsonsive Stuff */
+header {
+  width: 100%;
+  height: 145px;
+  position: fixed;
+}
+header object,
+header img {
+  float: left;
+  position: relative;
+  top: 22px;
+  left: 0px;
+}
+header h1,
+header h2 {
+  display: none;
+}
+header nav {
+  float: right;
+  position: relative;
+  top: 50px;
+  left: 0px;
+}
+header nav a {
+  margin-left: 15px;
+  font-weight: normal;
+}
+#content {
+  padding-top: 145px;
+}
 section,
 .section-bottom,
 footer {
@@ -4787,6 +4817,27 @@ footer {
 .divider-mountain-two,
 .divider-mountain-three {
   margin-top: 20px;
+}
+/* Images */
+div.mountains-one {
+  height: 87px;
+  width: 268px;
+}
+div.mountains-two {
+  height: 112px;
+  width: 203px;
+}
+div.mountains-three {
+  height: 70px;
+  width: 154px;
+}
+div.mountains-four {
+  height: 81px;
+  width: 254px;
+}
+div.mountains-five {
+  height: 74px;
+  width: 153px;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   header object,
@@ -4821,39 +4872,13 @@ footer {
     display: none;
   }
 }
-/* Header */
-header {
-  height: 145px;
-}
-header object,
-header img {
-  float: left;
-  position: relative;
-  top: 22px;
-  left: 0px;
-}
-header h1,
-header h2 {
-  display: none;
-}
-header nav {
-  float: right;
-  position: relative;
-  top: 50px;
-  left: 0px;
-}
-header nav a {
-  margin-left: 15px;
-}
 /* Hero */
 #hero h2 {
   font-family: AvenirNextLTPro-Regular, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* Services */
 .services-plus {
-  position: relative;
-  top: 75px;
-  left: 0px;
+  margin-top: 75px;
 }
 /* Projects */
 .project-icons {

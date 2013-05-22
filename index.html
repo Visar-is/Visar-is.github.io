@@ -48,11 +48,14 @@
 				<a href="#about" class="button scroll-link">Um okkur</a>
 				<a href="#contact" class="button scroll-link">Hafðu samband</a>
 			</nav>
+			<div class="clearfix"></div>
 		</div>
 	</header>
+		
+	<div id="content">
 	<hr class="divider-dark-blue-stripe">
-	
 
+	
 	<!-- Hero -->
     <section id="hero" class="background-graph"> 
 	    <div class="container">
@@ -75,7 +78,7 @@
 				<h1>Þjónusta</h1>
 			</div>
 			<div class="six columns omega text-right">	
-				<object data="/img/mountains-1.svg">
+				<object class="mountains-one" data="/img/mountains-1.svg">
 				    <img src="/img/mountains-1.png">
 				</object>
 			</div>
@@ -144,7 +147,7 @@
 				<h1>Verkefni</h1>
 			</div>
 			<div class="ten columns omega text-right">	
-				<object data="/img/artwork-line-graph.svg">
+				<object class="" data="/img/artwork-line-graph.svg">
 				    <img src="/img/artwork-line-graph.png">
 				</object>
 			</div>
@@ -184,7 +187,7 @@
 				<h2>Valin verkefni</h2>
 			</div>
 			<div class="six columns omega text-right">	
-				<object data="/img/mountains-3.svg">
+				<object class="mountains-three" data="/img/mountains-3.svg">
 				    <img src="/img/mountains-3.png">
 				</object>
 			</div>
@@ -243,7 +246,7 @@
 					<h1>Um okkur</h1>
 				</div>
 				<div class="six columns omega text-right">	
-					<object data="/img/mountains-4.svg">
+					<object class="mountains-four" data="/img/mountains-4.svg">
 					    <img src="/img/mountains-4.png">
 					</object>
 				</div>
@@ -303,7 +306,7 @@
 					<h1>Hafðu samband</h1>
 				</div>
 				<div class="six columns omega text-right">	
-					<object data="/img/mountains-5.svg">
+					<object class="mountains-five" data="/img/mountains-5.svg">
 					    <img src="/img/mountains-5.png">
 					</object>
 				</div>
@@ -313,23 +316,19 @@
 			<div class="row clearfix">    	
 				<div class="seven columns alpha">	
 					<h3>Símleiðis</h3>
-					<form action="POST">
+					<form action="POST" id="contact_form" name="contact_form">
 						<label>Nafnið þitt</label>
-						<input type="text" name="name" placeholder="Leif Ericson" value="">
+						<input type="text" name="name" id="contact_name" placeholder="Leif Ericson" value="">
 						<label>Símanúmerið þitt</label>
-						<input type="phone" name="phone" placeholder="+354 612 2528" value="">
+						<input type="phone" name="phone" id="contact_phone" placeholder="+354 612 2528" value="">
 						<label>Netfang</label>
-						<input type="email" name="email" placeholder="leif@explorers.is" value="">
-						<label>Fjárhagsáætlun</label>
-						<select name="budget">
-							<option value="">400.000 - 800.000 ISK</option>
-						</select>
-						<label>Iðnaður</label>
-						<select name="budget">
-							<option value="">Fjármál</option>
-						</select>			
+						<input type="email" name="email" id="contact_email" placeholder="leif@explorers.is" value="">
+						<label>Athugasemd</label>
+						<textarea name="comment" id="contact_comment"></textarea>
+						<input type="hidden" name="language" value="english">
 						<button name="submit">Hafðu samband</button>
 					</form>
+					<p id="contact_message"></p>
 				</div>
 				<div class="nine columns omega">	
 					<h3>Með pósti</h3>
@@ -351,6 +350,8 @@
 
 		</div>
 	</footer>
+	
+	</div>
 
 
     <!-- Le javascript ================================================== -->
@@ -366,13 +367,36 @@
 		        var target = $(this.hash);
 		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		           if (target.length) {
+					var link_height = target.offset().top - 145;		           
 		             $('html,body').animate({
-		                 scrollTop: target.offset().top
+		                 scrollTop: link_height
 		            }, 1000);
 		            return false;
 		        }
 		    }
 		});
+
+		// Contact
+		$('#contact_form').bind('submit', function(e){
+			e.preventDefault();
+			var contact_data = $('#contact_form').serialize();
+			console.log(contact_data);
+			$.ajax({
+				url		: 'contact.php',
+				type	: 'POST',
+				dataType: 'json',
+				data	: contact_data,
+				success	: function(result)
+				{
+					$('#contact_name').html('');
+					$('#contact_phone').html('');
+					$('#contact_email').html('');				
+					$('#contact_comment').html('');
+					$('#contact_message').html(result.message);
+				}
+			});			
+		});
+		
       }(window.jQuery)
     </script>
   </body>
