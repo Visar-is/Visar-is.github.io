@@ -37,6 +37,12 @@
 		.button-globals(@button-primary-color, @button-primary-shadow, @button-primary-border);
 		text-decoration: none;
 	}
+	.button:visited,
+	.button-primary:visited {
+		.gradient(@button-primary-top, @button-primary-bottom, @button-primary-top);
+		.button-globals(@button-primary-color, @button-primary-shadow, @button-primary-border);
+		text-decoration: none;
+	}
 	.button:hover,
 	.button-primary:hover,
 	button:hover,
@@ -55,7 +61,7 @@
 	input[type="button"]:active {	
 		.gradient(@button-primary-top-hover, @button-primary-top-hover, @button-primary-bottom-hover);
 		border: 1px solid #444;
-		text-decoration: none;		
+		text-decoration: none;
 	}
 
 

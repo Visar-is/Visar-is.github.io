@@ -3900,6 +3900,32 @@ input[type="button"] {
   border-left: 1px solid #2274a5;
   text-decoration: none;
 }
+.button:visited,
+.button-primary:visited {
+  background: #006daf;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #005283), color-stop(1, #006daf));
+  background: -ms-linear-gradient(bottom, #005283, #006daf);
+  background: -moz-linear-gradient(center bottom, #005283 0%, #006daf 100%);
+  background: -o-linear-gradient(#006daf, #005283);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006daf', endColorstr='#005283', GradientType=0);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 10px 12px;
+  color: #ffffff !important;
+  font-family: AvenirNextLTPro-Demi, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  text-shadow: 1px 1px 1px #444444;
+  border: 1px solid #005283;
+  border-top: 1px solid #2274a5;
+  border-left: 1px solid #2274a5;
+  text-decoration: none;
+}
 .button:hover,
 .button-primary:hover,
 button:hover,
@@ -4781,14 +4807,14 @@ label span.form_error {
 /* Global Repsonsive Stuff */
 header {
   width: 100%;
-  height: 145px;
+  height: 110px;
   position: fixed;
 }
 header object,
 header img {
   float: left;
   position: relative;
-  top: 22px;
+  top: 8px;
   left: 0px;
 }
 header h1,
@@ -4798,7 +4824,7 @@ header h2 {
 header nav {
   float: right;
   position: relative;
-  top: 50px;
+  top: 30px;
   left: 0px;
 }
 header nav a {
@@ -4806,7 +4832,7 @@ header nav a {
   font-weight: normal;
 }
 #content {
-  padding-top: 145px;
+  padding-top: 110px;
 }
 section,
 .section-bottom,
@@ -4819,23 +4845,27 @@ footer {
   margin-top: 20px;
 }
 /* Images */
-div.mountains-one {
+.logo {
+  height: 92px;
+  width: 309px;
+}
+.mountains-one {
   height: 87px;
   width: 268px;
 }
-div.mountains-two {
+.mountains-two {
   height: 112px;
   width: 203px;
 }
-div.mountains-three {
+.mountains-three {
   height: 70px;
   width: 154px;
 }
-div.mountains-four {
+.mountains-four {
   height: 81px;
   width: 254px;
 }
-div.mountains-five {
+.mountains-five {
   height: 74px;
   width: 153px;
 }

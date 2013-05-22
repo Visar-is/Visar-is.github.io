@@ -37,7 +37,7 @@
 	<!-- Header -->	  
 	<header class="background-stone">
 		<div class="container">
-			<object data="/img/logo.svg">
+			<object class="logo" data="/img/logo.svg">
 			    <img src="/img/logo.png">
 			</object>			
 			<h1>vísar</h1>
@@ -367,7 +367,7 @@
 		        var target = $(this.hash);
 		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		           if (target.length) {
-					var link_height = target.offset().top - 145;		           
+					var link_height = target.offset().top - 108;		           
 		             $('html,body').animate({
 		                 scrollTop: link_height
 		            }, 1000);
