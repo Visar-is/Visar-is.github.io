@@ -67,24 +67,49 @@
 		height: 74px;
 		width: 153px;
 	}
+	
+	.artwork-line-graph {
+		width: 546px;
+		height: 72px;
+	}
+	
+	
+	
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+		header { position: relative; }
 	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
 	    header nav { display: none; }
+
+		#content { padding-top: 0px; }
+
 	}
 
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
 
+		header { position: relative; }
 	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
 	    header nav { display: none; }
+
+		#content { padding-top: 0px; }
+
 	}
 
     @media only screen and (max-width: 480px) {
 
+		header { position: relative; }
 	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
 	    header nav { display: none; }
+	    
+		#content { padding-top: 0px; }
+	    	
+		.artwork-line-graph {
+			width: 320px;
+			height: 42px;
+		}
+	    
 	}
 
 
@@ -138,6 +163,10 @@
 		margin: 15px 0;
 	}
 	
+	
+/* AJAX Content */
+
+	.projects-content { display: none; }
 	
 
 	

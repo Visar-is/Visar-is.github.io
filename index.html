@@ -147,7 +147,7 @@
 				<h1>Verkefni</h1>
 			</div>
 			<div class="ten columns omega text-right">	
-				<object class="" data="/img/artwork-line-graph.svg">
+				<object class="artwork-line-graph" data="/img/artwork-line-graph.svg">
 				    <img src="/img/artwork-line-graph.png">
 				</object>
 			</div>
@@ -200,30 +200,33 @@
 				<div class="project-icons project-icons-skolavogin"></div>
 				<h4>Skólavogin</h4>
 				<p>Sambandið<br>Greiningar- og miðlunarkerfi</p>
-				<a href="http://skolavogin.is/um" class="right">Lesa meira</a>
+				<a href="http://skolavogin.is/um" data-project="heilsueflandi" class="right learn-more">Lesa meira</a>
 			</div>
 			<div class="eight columns omega background-white-box">
 				<div class="project-icons project-icons-heilsueflandi"></div>
 				<h4>Heilsueflandi.is</h4>
 				<p>Landlæknir<br>Verkefnisstjórnunarkerfi</p>
-				<a href="#casestudy-heilsueflandi" class="right">Lesa meira</a>
+				<a href="#projects-container" data-project="heilsueflandi" class="right learn-more">Lesa meira</a>
 			</div>
 
 			<div class="eight columns alpha background-white-box">
-				<div class="project-icons project-icons-reykjavik"></div>			
+				<div class="project-icons project-icons-reykjavik"></div>		
 				<h4>Líðan nemenda í grunnskólum Reykjavíkur</h4>
 				<p>Reykjavíkurborg<br>Greining</p>
-				<a href="#casestudy-reykjavik" class="right">Lesa meira</a>
+				<a href="#projects-container" data-project="reykjavik" class="right learn-more">Lesa meira</a>
 			</div>
 			<div class="eight columns omega background-white-box">
 				<div class="project-icons project-icons-unicef"></div>
 				<h4>Réttindi barna á Íslandi: Ofbeldi og forvarnir</h4>
 				<p>Landlæknir<br>Greining</p>
-				<a href="#casestudy-unicef" class="right">Lesa meira</a>
+				<a href="#projects-container" data-project="unicef" class="right learn-more">Lesa meira</a>
 			</div>
 			<div class="clearfix"></div>
+				
+			<div id="projects-container"></div>
+
 			<div class="section-bottom"></div>
-			
+
 		</div>
 	</section>
 
@@ -350,12 +353,30 @@
 
 		</div>
 	</footer>
-	
+	</div>
+
+
+	<!-- AJAX Content -->
+	<div id="projects-content-skolapulsinn" class="projects-content"></div>
+	<div id="projects-content-skolavoign" class="projects-content"></div>
+	<div id="projects-content-heilsueflandi" class="projects-content">
+		<p><a href="http://heilsueflandi.is" target="_blank">Heilsueflandi.is</a> er  skráningarkerfi fyrir skólastjóra í grunnskólum til að fylgjast með framþróun á markmiðum verkefnisins Heilsueflandi grunnskóli.</p>
+		<p>Hver þáttökuskóli er með notendaviðmót  fyrir nafnlausan samanburð á stöðu skólanna á mynd- og töfluformi. Kerfið inniheldur einning stjórnendaaðgang samskiptahluta og yfirlitstöflum og útflutningi fyrir töflureikni.</p>
+	</div>
+	<div id="projects-content-reykjavik" class="projects-content">
+		<p>Kynjamunur á velferð grunnskólanemenda</p>
+		<p>Við höfum metið virkni í námi, líðan og skólabrag í skólum eftir kyni og tengsl þess við námsárangur í grunnskólum fyrir fræðsluyfirvöld í Reykjavík og í Garðabæ. Rannsóknin var gerð í maí 2011 og mars 2012 og nær til nemenda í 7. og 10. bekk grunnskóla. Gögn úr sjálfsmatskerfi okkar fyrir grunnskóla, Skólapúlsinum og niðurstöður samræmdra prófa Námsmatsstofnunar voru nýtt til greiningarinnar sem varpar ljósi á stöðu drengja og stúlkna á miðstigi og unglingastigi og hvernig staðan breytist á milli stiga.</p>		
+	</div>
+	<div id="projects-content-unicef" class="projects-content">
+		<p>UNICEF gaf í mars 2013 út skýrsluna Réttindi barna á Íslandi: Ofbeldi og forvarnir. Í fimmta kafla hennar eru birtar niðurstöður rannsóknar sem við unnum um einelti, líðan og sjálfsálit grunnskólabarna. Þar eru langtímagögn úr einu af verkefnum okkar, Skólapúlsinum, nýtt til að varpa ljósi á þá vanlíðan og niðurbrot sjálfstrausts sem alvarlegt einelti hefur í för með sér. Þátttökuskólar voru 61 talsins og gagnaöflunin náði til um 60% allra grunnskólanemenda á landsvísu í áðurnefndum árgöngum. Mælingarnar eru frá hausti 2009 til vors 2012.</p>
+		<p>Frétt um skýrslu UNICEF birtist á <a href="http://www.mbl.is/frettir/innlent/2013/03/07/finnst_framtidin_oft_vonlaus/" target="_blank">mbl.is</a> og rædd í <a href="http://www.visir.is/section/MEDIA98&fileid=CLP17446" target="_blank">Í Bítið á Bylgjunni</a> og í <a href="http://www.ruv.is/mannlif/slaandi-nidurstodur-i-nyrri-skyrslu-unicef" target="_blank">Morgunútvarpi Rásar 2</a>.</p>
+		<p>Skýrsluna í heild sinni má <a href="http://www.unicef.is/rettindibarnaaislandi" target="_blank">nálgast hér</a>.</p>
 	</div>
 
 
     <!-- Le javascript ================================================== -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/enquire.js"></script>
     <script>
       !function ($) {
       
@@ -375,6 +396,67 @@
 		        }
 		    }
 		});
+		
+		
+		// Learn More
+		/*
+		var web		= "screen and (min-width: 1024px)",
+	    	tablet	= "screen and (min-width: 768px) and (max-width: 959px)",
+	    	mobile	= "screen and (min-width: 480px) and (max-width: 767px)",
+		    handler1 = {
+		        match : function() {},
+		        destroy : function() { console.log("handler 1 destroyed"); }
+		    },
+		    handler2 = {
+		        match : function() {},
+		        unmatch : function() { console.log("handler 2 unmatched"); }
+		    },
+		    handler3 = {
+		    	match : function() {},
+		    	unmatch : function() { console.log("handler 3 unmatched"); }
+		    };
+		*/
+
+		enquire.register("screen and (min-width: 1024px)", {
+			match: function() {
+
+				console.log('Yay resolution is min 1024px');
+			
+				$('.learn-more').bind('click', function(e) {
+					e.preventDefault();
+					alert('Yay resolution is min 1024px');
+				});
+			}
+		}).unregister();
+
+
+		enquire.register("screen and (min-width: 768px) and (max-width: 959px)", {
+			match: function() {
+
+				console.log('Yay resolution is min 768px');
+
+				$('.learn-more').bind('click', function(e) {
+					e.preventDefault();
+					alert('Yay resolution is min 768px');
+				});
+			}
+		}).unregister();
+
+
+		enquire.register("screen and (min-width: 480px) and (max-width: 767px)", {
+			match: function() {
+
+				console.log('Yay resolution is min 480px');
+
+				$('.learn-more').bind('click', function(e) {
+					e.preventDefault();
+					alert('Yay resolution is min 480px');
+				});
+			}
+		}).unregister();
+
+
+
 
 		// Contact
 		$('#contact_form').bind('submit', function(e){
