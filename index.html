@@ -318,17 +318,17 @@
 					<h3>Símleiðis</h3>
 					<form action="POST" id="contact_form" name="contact_form">
 						<label>Nafnið þitt</label>
-						<input type="text" name="name" id="contact_name" placeholder="Leif Ericson" value="">
+						<input type="text" name="name" id="contact_name" placeholder="Jóna Jónsdóttir" value="">
 						<label>Símanúmerið þitt</label>
-						<input type="phone" name="phone" id="contact_phone" placeholder="+354 612 2528" value="">
+						<input type="phone" name="phone" id="contact_phone" placeholder="+354 1002000" value="">
 						<label>Netfang</label>
-						<input type="email" name="email" id="contact_email" placeholder="leif@explorers.is" value="">
-						<label>Athugasemd</label>
+						<input type="email" name="email" id="contact_email" placeholder="jona@jonsdottir.is" value="">
+						<label>Skilaboð</label>
 						<textarea name="comment" id="contact_comment"></textarea>
-						<input type="hidden" name="language" value="english">
+						<input type="hidden" name="language" value="icelandic">
+						<p id="contact_message"></p>
 						<button name="submit">Hafðu samband</button>
 					</form>
-					<p id="contact_message"></p>
 				</div>
 				<div class="nine columns omega">	
 					<h3>Með pósti</h3>
@@ -380,18 +380,16 @@
 		$('#contact_form').bind('submit', function(e){
 			e.preventDefault();
 			var contact_data = $('#contact_form').serialize();
-			console.log(contact_data);
 			$.ajax({
 				url		: 'contact.php',
 				type	: 'POST',
 				dataType: 'json',
 				data	: contact_data,
-				success	: function(result)
-				{
-					$('#contact_name').html('');
-					$('#contact_phone').html('');
-					$('#contact_email').html('');				
-					$('#contact_comment').html('');
+				success	: function(result) {
+					$('#contact_name').val('');
+					$('#contact_phone').val('');
+					$('#contact_email').val('');				
+					$('#contact_comment').val('');
 					$('#contact_message').html(result.message);
 				}
 			});			
