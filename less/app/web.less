@@ -41,7 +41,8 @@
 	}
 
 
-	/* Images */
+/* Images */
+
 	.logo {
 		height: 92px;
 		width: 309px;
@@ -67,52 +68,20 @@
 		height: 74px;
 		width: 153px;
 	}
+	.mountains-whole {
+		width: 994px;
+		height: 175px;
+	}
 	
 	.artwork-line-graph {
 		width: 546px;
 		height: 72px;
 	}
-	
-	
-	
-
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-
-		header { position: relative; }
-	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
-	    header nav { display: none; }
-
-		#content { padding-top: 0px; }
-
+	.artwork-projects-featured-graph {
+		width: 851px;
+		height: 349px;
 	}
-
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-		header { position: relative; }
-	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
-	    header nav { display: none; }
-
-		#content { padding-top: 0px; }
-
-	}
-
-    @media only screen and (max-width: 480px) {
-
-		header { position: relative; }
-	    header object, header img { display: block; margin-left: auto; margin-right: auto; }
-	    header nav { display: none; }
-	    
-		#content { padding-top: 0px; }
-	    	
-		.artwork-line-graph {
-			width: 320px;
-			height: 42px;
-		}
-	    
-	}
-
-
+	
 
 /* Hero */
 
@@ -122,16 +91,14 @@
 
 /* Services */
 	
-	.services-plus {
-		margin-top: 75px;
-	}
+	.services-plus { margin-top: 95px; }
 	
 /* Projects */
 
 	.project-icons {
 		float: left;
 		width: 100px;
-		height: 100px;
+		height: 130px;
 		background-image: url('/img/projects-icons.png');
 		background-repeat: no-repeat;
 	}
@@ -163,11 +130,53 @@
 		margin: 15px 0;
 	}
 	
+
+/* Lightbox */
+
+	#lightbox {
+		display: none;
+		position: fixed; /* keeps the lightbox window in the current viewport */
+		top:0; 
+		left:0; 
+		width:100%; 
+		height:100%; 
+		background-color:rgba(0,0,0,0.85);
+		text-align:center;
+	}
+
+	#lightbox-close {
+		width: 100px;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background: #EEEEEE;
+		color: #333333;
+		font-weight: bold;
+		padding: 8px 4px;
+	}
+	#lightbox-close:hover {
+		background: #CCCCCC;
+		color: #333333;
+		text-decoration: none;
+	}
 	
-/* AJAX Content */
+	#lightbox-content {
+		display: block;
+		width: 500px;
+		text-align: left;
+		background: #EEEEEE;
+		color: #333333;
+		margin: 20px auto;
+		padding: 30px;
+		font-size: 18px;
+	}
+	
+	#lightbox-content .project-icons {
+		margin-right: 20px;	
+	}
+
 
 	.projects-content { display: none; }
-	
 
 	
 	
