@@ -1,104 +1,53 @@
 /* Global Repsonsive Stuff */
 
+	header 					{ width: 100%; height: 110px; position: fixed; }
+	header .logo 			{ width: 309px; height: 92px; float: left; position: relative; top: 8px; left: 0px; display: block; }
+	header h1, header h2	{ display: none; }
+	header nav				{ float: right; position: relative; top: 30px; left: 0px; }
+	header nav a			{ margin-left: 15px; font-weight: normal; }
 
-	header { 
-		width: 100%;
-		height: 110px;
-		position: fixed;
-	}
-	header object, header img {
-		float: left;
-		position: relative;
-		top: 8px;
-		left: 0px;
-	}
-	header h1, header h2 {
-		display: none;		
-	}
-	header nav {
-		float: right;
-		position: relative;
-		top: 30px;
-		left: 0px;
-	}
-	header nav a {
-		margin-left: 15px;
-		font-weight: normal;
-	}
+	#content { padding-top:110px; }
 
+	section, .section-bottom, footer { padding: 20px 0 0 0; }
 
-	#content {
-		padding-top:110px;
-	}
+	.background-white-box.columns h3,
+	.background-white-box.columns h4,
+	.background-white-box.columns div.project-icons, 
+	.background-white-box.columns a.learn-more { margin: 20px; }
+	.background-white-box.columns p { margin: 20px 20px 0 20px; }
 
-
-	section, .section-bottom, footer {
-		padding: 20px 0 0 0;
-	}
+	.divider-mountain-one, .divider-mountain-two, .divider-mountain-three { margin-top: 20px; }
 	
-	.divider-mountain-one, .divider-mountain-two, .divider-mountain-three {
-		margin-top: 20px;
-	}
-
 
 /* Images */
-
-	.logo {
-		height: 92px;
-		width: 309px;
-	}
 	
-	.mountains-one {
-		height: 87px;
-		width: 268px;
-	}
-	.mountains-two {
-		height: 112px;
-		width: 203px;
-	}
-	.mountains-three {
-		height: 70px;
-		width: 154px;
-	}
-	.mountains-four {
-		height: 81px;
-		width: 254px;
-	}
-	.mountains-five {
-		height: 74px;
-		width: 153px;
-	}
-	.mountains-whole {
-		width: 994px;
-		height: 175px;
-	}
-	
-	.artwork-line-graph {
-		width: 546px;
-		height: 72px;
-	}
-	.artwork-projects-featured-graph {
-		width: 851px;
-		height: 349px;
-	}
+	.mountains-one                   { height: 87px; width: 268px; }
+	.mountains-two                   { height: 112px; width: 203px; }
+	.mountains-three                 { height: 70px; width: 154px; }
+	.mountains-four                  { height: 81px; width: 254px; }
+	.mountains-five                  { height: 74px; width: 153px; }
+	.mountains-whole                 { width: 994px; height: 175px; }
+	.artwork-line-graph              { width: 546px; height: 72px; }
+	.artwork-projects-featured-graph { width: 851px; height: 349px; }
 	
 
 /* Hero */
 
-	#hero h2 { 
-		font-family: @base-text-font-family;
-	}
+	#hero h2 { font-family: @base-text-font-family; }
 
 /* Services */
 	
-	.services-plus { margin-top: 95px; }
-	
+	#services-white-box {
+		margin: 45px 0;
+		padding: 45px 0 30px 0;	
+	}
+
 /* Projects */
 
 	.project-icons {
 		float: left;
 		width: 100px;
-		height: 130px;
+		height: 150px;
 		background-image: url('/img/projects-icons.png');
 		background-repeat: no-repeat;
 	}
@@ -118,17 +67,23 @@
 		background-position: -400px 0;
 	}	
 
+
 	
 /* About */
 
-	#about .vard .title {
-		font-family: AvenirNextLTPro-It;
-	}
+	#about .vcard .title	{ font-family: AvenirNextLTPro-It; }
+	#about .vcard img 		{ display: block; margin: 15px 0; }
 
-	#about .vcard img {
-		display: block;
-		margin: 15px 0;
-	}
+	
+/* Contact */
+
+	#contact .icon-phone,
+	#contact .icon-mail {
+		position: relative;
+		top: 12px;
+		left: 0px;
+		margin-right: 10px;
+	}	
 	
 
 /* Lightbox */
@@ -145,24 +100,26 @@
 	}
 
 	#lightbox-close {
-		width: 100px;
+		width: 90px;
 		position: fixed;
 		top: 20px;
 		right: 20px;
-		background: #EEEEEE;
+		background: #CCCCCC;
 		color: #333333;
 		font-weight: bold;
 		padding: 8px 4px;
+		z-index: 10;
+		text-align: center;
 	}
 	#lightbox-close:hover {
-		background: #CCCCCC;
+		background: #AAAAAA;
 		color: #333333;
 		text-decoration: none;
 	}
 	
 	#lightbox-content {
 		display: block;
-		width: 500px;
+		width: 560px;
 		text-align: left;
 		background: #EEEEEE;
 		color: #333333;

@@ -117,19 +117,21 @@
 	    .container .offset-by-fifteen               { padding-left: 900px; }
 
     }
-    
+
+
 /* Tablet All for a width of 1024px ================================================== */
-    
-    
+        
 	@media only screen and (max-width: 1024px) { 
-	
+
         .container                                  { }
-		
-	}
+
+	}    
+    
 
 /* Tablet (Portrait) Design for a width of 768px ================================================== */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
+
     
         .container                                  { width: 768px; }
         .container .column,
@@ -183,7 +185,7 @@
 
     @media only screen and (max-width: 767px) {
  
-        .container { width: 300px; }
+        .container { width: 280px; }
         .container .columns,
         .container .column { margin: 20px auto; }
 
@@ -276,7 +278,9 @@
       overflow: hidden;
       visibility: hidden;
       width: 0;
-      height: 0; }
+      height: 0;
+	  clear: both;      
+    }
     
     .row:after,
     .clearfix:after { clear: both; }
