@@ -88,10 +88,8 @@
 			</div>
 
 
+			<div id="services-white-box" class="background-white-box">					
 
-
-			<div id="services-white-box" class="background-white-box">
-					
 				<div class="three columns text-center">
 					<span class="icon-research"></span>
 				</div>
@@ -447,6 +445,7 @@
 		// Show & Close Lightbox
 		var showLightBox = function(project) {
 			lightbox_content = $('#projects-' + project).html(),
+			lightbox_content = lightbox_content.replace('<a href="#" data-project="' + project + '" class="learn-more">Lesa meira</a>', ''),
 			lightbox_content = lightbox_content.replace('<a href="#" data-project="' + project + '" class="right learn-more">Lesa meira</a>', '');
 			$('#lightbox-content').html(lightbox_content).prepend('<a href="#" id="lightbox-close">X Loka</a>').find('.projects-content').show().addClass('bounceInDown');
 			$('#lightbox').show();			
