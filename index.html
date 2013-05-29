@@ -78,8 +78,8 @@
 				<h1>Okkar nálgun</h1>
 			</div>
 			<div class="six columns omega text-right">	
-				<object class="mountains-one" data="/img/mountains-1.svg">
-				    <img class="mountains-one" src="/img/mountains-1.png">
+				<object class="mountains-one right" data="/img/mountains-1.svg">
+				    <img class="mountains-one right" src="/img/mountains-1.png">
 				</object>
 			</div>
 
@@ -182,8 +182,8 @@
 				<h1>Þjónusta</h1>
 			</div>
 			<div class="ten columns omega text-right">	
-				<object class="artwork-line-graph" data="/img/artwork-line-graph.svg">
-				    <img class="artwork-line-graph" src="/img/artwork-line-graph.png">
+				<object class="artwork-line-graph right" data="/img/artwork-line-graph.svg">
+				    <img class="artwork-line-graph right" src="/img/artwork-line-graph.png">
 				</object>
 			</div>
 			<div class="row clearfix">
@@ -306,8 +306,8 @@
 					<h1>Um okkur</h1>
 				</div>
 				<div class="six columns omega text-right">	
-					<object class="mountains-four" data="/img/mountains-4.svg">
-					    <img class="mountains-four" src="/img/mountains-4.png">
+					<object class="mountains-four right" data="/img/mountains-4.svg">
+					    <img class="mountains-four right" src="/img/mountains-4.png">
 					</object>
 				</div>
 			</div>
@@ -366,8 +366,8 @@
 					<h1>Hafðu samband</h1>
 				</div>
 				<div class="six columns omega text-right">	
-					<object class="mountains-five" data="/img/mountains-5.svg">
-					    <img class="mountains-five" src="/img/mountains-5.png">
+					<object class="mountains-five right" data="/img/mountains-5.svg">
+					    <img class="mountains-five right" src="/img/mountains-5.png">
 					</object>
 				</div>
 			</div>
@@ -482,6 +482,9 @@
 		// Tablet
 		enquire.register("screen and (min-width: 768px) and (max-width: 959px)", {
 			match: function() {
+
+				console.log('here in tablet size');
+
 				$target.on("click", function(e) {
 					e.preventDefault();
 					showLightBox($(this).data('project'));										
@@ -495,7 +498,12 @@
 		// Mobile
 		enquire.register("screen and (max-width: 480px)", {
 			match: function() {
+				console.log('here in mobile size');
+			
 				$target.on("click", function(e) {
+				
+					console.log('clicked in mobile learn more');
+				
 					e.preventDefault();
 					$(this).fadeOut();
 					$('#projects-content-' + $(this).data('project')).fadeIn();
