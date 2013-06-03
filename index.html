@@ -18,7 +18,7 @@
 	<meta property="og:description" content="Vísar bjóða upp á sérsniðnar kannanir fyrir fyrirtæki og stofnanir á Íslandi">
 
     <!-- Le styles -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="<?= getenv('assets_url') ?>css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,11 +26,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?= getenv('assets_url') ?>ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= getenv('assets_url') ?>ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= getenv('assets_url') ?>ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?= getenv('assets_url') ?>ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="<?= getenv('assets_url') ?>ico/favicon.png">
   </head>
   <body>
 
@@ -530,7 +530,7 @@
 			e.preventDefault();
 			var contact_data = $('#contact_form').serialize();
 			$.ajax({
-				url		: 'contact.php',
+				url		: 'http://static-visar.herokuapp.com/contact.php',
 				type	: 'POST',
 				dataType: 'json',
 				data	: contact_data,
