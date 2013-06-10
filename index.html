@@ -20,11 +20,6 @@
     <!-- Le styles -->
     <link href="http://static-visar.herokuapp.com/css/visar.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://static-visar.herokuapp.com/js/html5shiv.js"></script>
-    <![endif]-->
-
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://static-visar.herokuapp.com/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://static-visar.herokuapp.com/ico/apple-touch-icon-114-precomposed.png">
@@ -424,128 +419,12 @@
 	</footer>
 	</div>
 
-
 	<!-- AJAX Content -->
 	<div id="lightbox" class="animated">
 		<div id="lightbox-content" class="animated bounceInDown"></div>
 	</div>
 
-
     <!-- Le javascript ================================================== -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://static-visar.herokuapp.com/js/enquire.js"></script>
-    <script>
-      !function ($) {
-
-
-       	// Smooth Scrolling
-		$('a.scroll-link[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-		        || location.hostname == this.hostname) {
-		        var target = $(this.hash);
-		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		           if (target.length) {
-					var link_height = target.offset().top - 108;		           
-		             $('html,body').animate({
-		                 scrollTop: link_height
-		            }, 1000);
-		            return false;
-		        }
-		    }
-		});
-
-
-		// Learn More
-		var $target = $("a.learn-more");
-		
-		// Show & Close Lightbox
-		var showLightBox = function(project) {
-			lightbox_content = $('#projects-' + project).html(),
-			lightbox_content = lightbox_content.replace('<a href="#" data-project="' + project + '" class="learn-more">Lesa meira</a>', ''),
-			lightbox_content = lightbox_content.replace('<a href="#" data-project="' + project + '" class="right learn-more">Lesa meira</a>', '');
-			$('#lightbox-content').html(lightbox_content).prepend('<a href="#" id="lightbox-close">X Loka</a>').find('.projects-content').show().addClass('bounceInDown');
-			$('#lightbox').show();			
-		
-			$('#lightbox-close').on("click", function(e) {
-				e.preventDefault();
-				$('#lightbox-content').addClass('bounceOutDown');
-				setTimeout(function() {
-					$('#lightbox-content').removeClass('bounceOutDown');
-					$('#lightbox').hide();
-				}, 750);
-			});		
-		};
-		
-		// Web
-		enquire.register("screen and (min-width: 1024px)", {
-			match: function() {
-				$target.on("click", function(e) {
-					e.preventDefault();
-					showLightBox($(this).data('project'));
-				});	
-			},
-			unmatch: function() {
-				$target.off("click");
-			}
-		});
-
-		// Tablet
-		enquire.register("screen and (min-width: 768px) and (max-width: 959px)", {
-			match: function() {
-
-				console.log('here in tablet size');
-
-				$target.on("click", function(e) {
-					e.preventDefault();
-					showLightBox($(this).data('project'));										
-				});
-			},
-			unmatch: function() {				
-				$target.off("click");
-			}
-		});
-
-		// Mobile
-		enquire.register("screen and (max-width: 480px)", {
-			match: function() {
-				console.log('here in mobile size');
-			
-				$target.on("click", function(e) {
-				
-					console.log('clicked in mobile learn more');
-				
-					e.preventDefault();
-					$(this).fadeOut();
-					$('#projects-content-' + $(this).data('project')).fadeIn();
-				});
-			},
-			unmatch: function() {
-				$target.off("click");
-			}
-		});
-
-
-		// Contact
-		$('#contact_form').bind('submit', function(e){
-			e.preventDefault();
-			var contact_data = $('#contact_form').serialize();
-			$.ajax({
-				url		: 'http://static-visar.herokuapp.com/contact.php',
-				type	: 'POST',
-				dataType: 'json',
-				data	: contact_data,
-				success	: function(result) {
-					$('#contact_name').val('');
-					$('#contact_phone').val('');
-					$('#contact_email').val('');				
-					$('#contact_comment').val('');
-					$('#contact_message').html(result.message);
-				}
-			});			
-		});
-
-
-      }(window.jQuery)
-    </script>
+    <script type="text/javascript" src="http://static-visar.herokuapp.com/js/visar-min.js"></script>
   </body>
 </html>
